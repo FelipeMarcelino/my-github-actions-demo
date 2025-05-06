@@ -2,10 +2,6 @@ options:
   # Add these lines
   logging: CLOUD_LOGGING_ONLY # No GCS bucket required
   machineType: E2_HIGHCPU_8
-  diskSizeGb: 100
-  volumes:
-    - name: pip-cache
-      path: /root/.cache/pip
 steps:
   # Install dependencies with cache
   - name: python:3.11-slim
