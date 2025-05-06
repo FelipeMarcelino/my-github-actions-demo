@@ -12,9 +12,6 @@ steps:
       - |
         pip install --user --upgrade pip
         pip install --user -r requirements-gcp.txt
-    volumes:
-      - name: pip-cache
-        path: /root/.cache/pip
   # Run tests
   - name: python:3.11-slim
     id: run-tests
