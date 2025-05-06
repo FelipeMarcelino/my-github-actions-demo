@@ -17,6 +17,7 @@ pkgs.mkShell {
     pythonPackages.tensorflow
     pythonPackages.ruff
     pythonPackages.python-lsp-server
+    pythonPackages.black
   ];
   venvDir = "./.venv";
   postVenvCreation = ''
