@@ -4,7 +4,6 @@
   stdenv,
   ...
 }:
-
 let
   pythonPackages = pkgs.python3Packages;
 in
@@ -18,7 +17,6 @@ pkgs.mkShell {
     pythonPackages.tensorflow
     pythonPackages.ruff
     pythonPackages.python-lsp-server
-
   ];
   venvDir = "./.venv";
   postVenvCreation = ''
