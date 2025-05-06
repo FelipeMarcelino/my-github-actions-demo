@@ -3,8 +3,6 @@ phases:
   install:
     commands:
       # Install Python and pip (if not pre-installed in the build environment)
-      - apt-get update -y
-      - apt-get install -y python3 python3-pip
       - python3 -m pip install --upgrade pip
   pre_build:
     commands:
