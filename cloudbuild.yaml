@@ -19,9 +19,6 @@ steps:
       - "-c"
       - |
         python -m pytest test_hello.py
-  # Store test results (optional)
-  - name: gcr.io/cloud-builders/gsutil
-    args: ["cp", "test-results.xml", "gs://your-bucket/test-results/"]
 # Cache configuration
 options:
   machineType: E2_HIGHCPU_8
