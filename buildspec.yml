@@ -12,7 +12,7 @@ phases:
     commands:
       # Run your tests or build commands here
       - echo "Running tests..."
-      - python -m pytest -vv --cov=hello test_hello.py
+      - python3 -m pytest -vv --cov=hello test_hello.py
       # Optional: Define artifacts to upload to S3 (e.g., logs, reports)
       # post_build:
       #   commands:
