@@ -18,6 +18,7 @@ pkgs.mkShell {
     pythonPackages.ruff
     pythonPackages.python-lsp-server
     pythonPackages.black
+    pkgs.docker_28
   ];
   venvDir = "./.venv";
   postVenvCreation = ''
